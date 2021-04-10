@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.17)
+project(lab01 VERSION 0.1.0)
+
+include(CTest)
+enable_testing()
+
+add_executable(lab01 main.cpp)
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
