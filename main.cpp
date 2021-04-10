@@ -39,9 +39,11 @@ void getTitlesFromFile(vector<string> &bookTitles) {
         cin >> filename;
         infile.open(filename);
     }
-    // loop through each file line. For each line grab title before ','
-    // abd store in bookTitles
-
+    while (getline(infile, instring)) {
+        stringstream linestream(instring);
+        getline(linestream, title, ',');
+        bookTitles.push_back(title);
+    }
     infile.close();
 }
 
