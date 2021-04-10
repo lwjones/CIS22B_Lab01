@@ -42,8 +42,7 @@ void getTitlesFromFile(vector<string> &bookTitles) {
     // loop through each file line. For each line grab title before ','
     // abd store in bookTitles
 
-    // close file
-
+    infile.close();
 }
 
 void printEachFromVector(const vector<string>& vec) {
