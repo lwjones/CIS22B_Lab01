@@ -22,7 +22,20 @@ int main() {
     return 0;
 }
 
+/**
+ * @brief Finds book titles from a file, in the program's directory or user
+ * specification via prompt, and stores them each in a vector.
+ * @param bookTitles  Vector of strings to store each title found in a file.
+ * Results are passed back.
+ */
 void getTitlesFromFile(vector<string> &bookTitles) {
+    // open file
+
+    // loop through each file line. For each line grab title before ','
+    // abd store in bookTitles
+
+    // close file
+
 }
 
 void printEachFromVector(const vector<string>& vec) {
