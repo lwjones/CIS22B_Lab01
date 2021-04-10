@@ -8,6 +8,22 @@
  * @date: 2021-04-09
  */
 
+#include <fstream>
+#include <iostream>
+#include <sstream>
+#include <vector>
+
+using namespace std;
+
+void getTitlesFromFile(vector<string> &bookTitles);
+void printEachFromVector(const vector<string>& vec);
+
 int main() {
     return 0;
+}
+
+void getTitlesFromFile(vector<string> &bookTitles) {
+}
+
+void printEachFromVector(const vector<string>& vec) {
 }
