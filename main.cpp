@@ -40,8 +40,8 @@ void getTitlesFromFile(vector<string> &bookTitles) {
         infile.open(filename);
     }
     while (getline(infile, instring)) {
-        stringstream linestream(instring);
-        getline(linestream, title, ',');
+        stringstream line(instring);
+        getline(line, title, ',');
         bookTitles.push_back(title);
     }
     infile.close();
