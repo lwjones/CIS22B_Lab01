@@ -32,8 +32,13 @@ void getTitlesFromFile(vector<string> &bookTitles) {
     ifstream infile;
     string instring, title;
     string filename = "Books.txt";
-    // open file
 
+    infile.open(filename);
+    while (!infile.is_open()) {
+        cout << "File not found. Please specify file/path: ";
+        cin >> filename;
+        infile.open(filename);
+    }
     // loop through each file line. For each line grab title before ','
     // abd store in bookTitles
 
