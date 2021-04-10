@@ -29,6 +29,9 @@ int main() {
  * Results are passed back.
  */
 void getTitlesFromFile(vector<string> &bookTitles) {
+    ifstream infile;
+    string instring, title;
+    string filename = "Books.txt";
     // open file
 
     // loop through each file line. For each line grab title before ','
